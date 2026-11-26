@@ -18,6 +18,8 @@ Download the dataset and place it in a `data/` folder at the repository root bef
 2. **Model**: VGG16 CNN (transfer learning), fine-tuned on the signature dataset for binary gender classification.
 3. **Training and evaluation**: train/validation/test split; performance measured with accuracy and a confusion matrix. Full experimental details are in the accompanying publication.
 
+Note: the accompanying paper extracts AlexNet CNN features and classifies them with KNN, SVM and an ensemble classifier; this repository's notebook instead uses a VGG16 transfer-learning model.
+
 ## Results
 
 Results reported in the accompanying paper (Kumar, Gornale & Siddalingappa, "Gender Classification from Behavioural Biometric Data using Convolutional Neural Network", ACVAIT 2022, [doi:10.2991/978-94-6463-196-8_49](https://doi.org/10.2991/978-94-6463-196-8_49)), Table 4 and Fig. 6. The dataset comprises 4,790 signatures from 479 writers (250 male, 229 female), split 70:30 for training and testing. CNN features were classified with KNN, SVM and an ensemble classifier:
