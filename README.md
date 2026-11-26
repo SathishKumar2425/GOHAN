@@ -20,7 +20,15 @@ Download the dataset and place it in a `data/` folder at the repository root bef
 
 ## Results
 
-> Results table (accuracy, precision, recall, F1, confusion matrix) will be added from the paper.
+Results reported in the accompanying paper (Kumar, Gornale & Siddalingappa, "Gender Classification from Behavioural Biometric Data using Convolutional Neural Network", ACVAIT 2022, [doi:10.2991/978-94-6463-196-8_49](https://doi.org/10.2991/978-94-6463-196-8_49)), Table 4 and Fig. 6. The dataset comprises 4,790 signatures from 479 writers (250 male, 229 female), split 70:30 for training and testing. CNN features were classified with KNN, SVM and an ensemble classifier:
+
+| Classifier | Accuracy |
+| --- | --- |
+| CNN + SVM | 84.40% |
+| CNN + KNN (k = 3) | 94.20% |
+| CNN + Ensemble (bagging, 30 learners) | 95.40% |
+
+The paper defines precision, recall and F-score (Eqs. 8-11) but reports numeric accuracy only, so those values are not listed here.
 
 ## Repository contents
 
